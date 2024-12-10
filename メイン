@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #0071e3;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            margin: 15px 0 5px;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100x40" alt="Logo">
+        <nav>
+            <a href="#">iPhone 16 Pro</a>
+            <a href="#">iPhone 16</a>
+            <a href="#">iPhone 15</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>iPhone</h1>
+        <p>手放せないもの。</p>
+    </div>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="iPhone 16 Pro">
+           
